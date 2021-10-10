@@ -1,0 +1,724 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.Mybag {
+  display: block;
+  margin-top: 80px;
+  background-color: #fff;
+  /* margin-left: 80px; */
+}
+
+.alldetails {
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 65px;
+  justify-content: space-between;
+}
+
+.alldetails h1 {
+  display: inline-block;
+  margin-left: 75px;
+  font-size: 30px;
+  color: #212121;
+}
+
+.alldetails p {
+  display: inline-block;
+  margin-left: 800px;
+  font-weight: 100;
+  color: #212121;
+}
+
+.alldetails .Change {
+  display: inline-block;
+  margin-left: 30px;
+
+  font-size: 14px;
+  color: rgb(90, 90, 90);
+}
+
+.alldetails .Change::after {
+  content: "";
+  width: 115px;
+  height: 0.5px;
+  background: rgb(160, 158, 158);
+  position: absolute;
+  font-weight: lighter;
+  margin-top: 25px;
+  transform: translateX(-113px);
+}
+
+.shopping_Cart {
+  display: block;
+  margin-top: 20px;
+  float: left;
+  width: 900px;
+}
+
+.shopping_details {
+  display: flex;
+  padding: 20px;
+  margin-left: 110px;
+  max-width: 800px;
+  height: 300px;
+
+  justify-content: space-between;
+  background: #fff;
+}
+
+.shopping_details img {
+  flex-basis: 20%;
+}
+
+.shopping_details .otherdetails {
+  flex-basis: 40%;
+}
+
+.shopping_details .deliveryby {
+  flex-basis: 40%;
+}
+
+.shopping_details .line::after {
+  content: "";
+  width: 280px;
+  height: 0.5px;
+  background: rgb(224, 223, 223);
+  position: absolute;
+  font-weight: lighter;
+  margin-top: 25px;
+}
+
+.Applycodesummary {
+  font-size: 14px;
+  margin-left: 115px;
+}
+
+.checkforcoupan {
+  display: block;
+  width: 550px;
+  height: 380px;
+
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.pay {
+  display: inline-block;
+  height: 60px;
+
+  width: 425px;
+
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+}
+
+.applynowline::after {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  font-weight: lighter;
+  margin-top: 25px;
+  transform: translateX(-40px);
+}
+
+.pay1 {
+  display: block;
+  height: 375px;
+  width: 425px;
+
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+.anotherline::after {
+  content: "";
+  width: 425px;
+  height: 2px;
+  background: #cfcccc;
+  position: absolute;
+  font-weight: lighter;
+  margin-top: 15px;
+  transform: translateX(-7px);
+}
+
+.checkoutbutton:hover {
+  margin-top: 0px;
+  -moz-box-shadow: 0px 0px 4px 1px grey;
+  -webkit-box-shadow: 0px 0px 4px 1px grey;
+  /* box-shadow: 0px 0px 4px 1px grey; */
+  box-shadow: 0px 8px 4px 0px rgb(168, 167, 167);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.payment {
+  width: 210px;
+  height: 36px;
+  border: 2px solid rgb(33, 33, 33);
+  margin-top: 350px;
+  margin-left: 400px;
+  border-radius: 18px;
+}
+
+.SSL {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-top: 120px;
+}
+
+.SSL p {
+  flex-basis: 60%;
+  margin-left: 180px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+#Needhelp {
+  flex-basis: 40%;
+  margin-bottom: 70px;
+  text-align: start;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #212121;
+}
+
+/* nav bar code css start */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+.main-page-middle {
+  background-color: #ececec;
+}
+/* Navigation bar */
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #212121;
+  transition: 200ms;
+  transform: translate3d(0, 0, 0);
+  z-index: 101;
+}
+.nav-bar {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 185px;
+  position: relative;
+  z-index: 1;
+}
+.nav-bar-logo {
+  width: 85px;
+  height: 55px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(https://www.tatacliq.com/src/general/components/img/group.7230d9f6111a.svg) no-repeat;
+  background-size: auto 40px;
+  background-position: center;
+  cursor: pointer;
+  transition: 200ms;
+}
+.luxury-tab {
+  width: auto;
+  height: 100%;
+  float: left;
+  line-height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.login-tab {
+  width: auto;
+  height: 60px;
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sign-in-section {
+  width: auto;
+  height: 100%;
+  position: relative;
+  float: right;
+  margin: 20px 0;
+}
+.sign-in,
+.track-orders {
+  width: auto;
+  height: 100%;
+  float: right;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.track-orders1 {
+  width: 25px;
+  height: 25px;
+  float: right;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #fff url(https://www.tatacliq.com/src/general/components/img/profile.39b59dc38fd3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 27px 0;
+}
+.nav-bar-upper-header {
+  height: 80px;
+  background-color: #212121;
+  width: 120%;
+  padding: 0 215px 0 10px;
+}
+
+/* sign in drop down list */
+
+.sign-in-dropdown {
+  width: 178px;
+  height: auto;
+  background: #fff;
+  right: 10px;
+  top: 60px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(-20px);
+  z-index: 1;
+  transition: 300ms;
+  box-shadow: 0 6px 6px 0 rgb(156 156 156 / 24%), 0 0 6px 0 rgb(0 0 0 / 12%);
+}
+.sign-in-section:hover .sign-in-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sign-in-dropdown::after {
+  content: "";
+  position: absolute;
+  top: -6%;
+  right: 7%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  transform: rotate(180deg);
+}
+.dropdown-container {
+  width: 100%;
+  height: auto;
+}
+
+.dropdown-login-button {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 20px;
+  text-align: center;
+}
+.dropdown-button-base {
+  height: 35px;
+  width: 135px;
+  border-radius: 18px;
+  float: none;
+  background: none rgb(255, 23, 68);
+  margin: auto;
+  display: grid;
+}
+.dropdown-button-base:hover {
+  transform: scale(1.08);
+  transition: 0.2s;
+}
+.dropdown-button-base span {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+.dropdown-menu-container {
+  width: 100%;
+  height: auto;
+  padding: 20px 15px 15px 20px;
+}
+.dropdown-menu-options {
+  width: 100%;
+  height: 25px;
+  position: relative;
+  padding-left: 30px;
+  color: #212121;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.dropdown-menu-options:hover {
+  transform: scale(1.1);
+  opacity: 80%;
+  transition: 0.2s;
+}
+.dropdown-menu-options-content1 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/general/components/img/profile.39b59dc38fd3.png) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content2 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/general/components/img/order-history.a92cd34e19fa.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content3 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/general/components/img/download.31e3d505d91e.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content4 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/account/components/img/alert.89aa376e9ac0.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content5 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/account/components/img/giftCards.c9b393b81026.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content6 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/account/components/img/cliqCash.89de362374b9.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.dropdown-menu-options-content7 {
+  width: 25px;
+  height: 25px;
+  background: url(https://www.tatacliq.com/src/general/components/img/settingsblack.fc70787f7c81.svg) no-repeat;
+  background-size: auto 18px;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* nav bar code over */
+
+#getTHEPINCODE {
+  margin-left: 890px;
+  font-size: 14px;
+}
+
+.iyeieiki {
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.pricedetails {
+  display: block;
+}
+
+#ieyhrubjsdfhjdh {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#ieuinweklewnleh {
+  display: inline-block;
+  text-decoration-line: line-through;
+  color: #212121;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#skahlknqkljehien {
+  margin-top: 20px;
+}
+
+.colordjhdjndjd {
+  display: block;
+}
+
+#ksjksuiwnwwjik {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#getTHESIZE {
+  display: inline-block;
+  margin-left: 35px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.rouorlmrjd {
+  display: block;
+}
+
+#iyemxmdhkdwk {
+  width: 25px;
+  margin-top: 40px;
+  display: inline block;
+}
+
+#ywnmhojwlslwje {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 10px;
+  color: rgb(56, 56, 56);
+  margin-left: 2px;
+}
+
+#yeuebmbjajkhsahks {
+  display: inline-block;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-left: 130px;
+  position: absolute;
+  margin-top: 45px;
+  color: rgb(56, 56, 56);
+}
+
+.deliveryby {
+  margin-top: 20px;
+}
+
+.deliveryicon {
+  display: block;
+}
+
+#yeiemebjdkdhkdnk {
+  display: inline-block;
+  margin-left: 15px;
+  position: absolute;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+#yejbsjhsksnskn {
+  font-weight: normal;
+  color: #212121;
+  display: inline-block;
+  margin-left: 110px;
+  position: absolute;
+}
+
+#iemnsdmksdjdskk {
+  display: inline-block;
+  position: absolute;
+  margin-left: 20px;
+}
+
+#khsaiqwnmwnkwn {
+  display: inline-block;
+  margin-left: 300px;
+  font-weight: lighter;
+  position: absolute;
+}
+
+#ksaksnkshaisakshsk {
+  display: block;
+  padding: 10px;
+}
+
+#yutesbmbdngssjjk {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#ksaknwsaiwnkwn {
+  display: inline-block;
+  margin-left: 250px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#ywembeuejwhiwhih {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#iwiwkwjwiuwknw {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#eujbenmsnbdmhjsahjas {
+  display: inline-block;
+  margin-left: 205px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#kyendmbdsjbs {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#iemsnmshaasnskhsa {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#kshakshanknqswijwk {
+  display: inline-block;
+  margin-left: 225px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#ksqwiwhwnsanmnx {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#skjywwmnwkhwjwn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#aewnkeheihek {
+  display: inline-block;
+  margin-left: 165px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #4a4a4a;
+}
+
+#jasenkehieekhei {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #417505;
+}
+
+#iyeuehnsjhas {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+#ksyuhwnmwnjwh {
+  display: block;
+}
+
+#wtwhbwjbwbwj {
+  margin-top: 2px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #212121;
+}
+
+.checkoutbutton {
+  margin-top: -5px;
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 160px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 170px;
+  height: 40px;
+  background-color: rgb(255, 23, 68);
+  text-align: center;
+  border-radius: 40px;
+}
+
+#irumnmhmzmsb {
+  position: absolute;
+  margin-left: 35px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #212121;
+}
+
+#eieeknekjeh{
+  color:#06B12D"
+}
+
+#uyeeknekn{
+
+  color:grey; font-size: 14px
+}

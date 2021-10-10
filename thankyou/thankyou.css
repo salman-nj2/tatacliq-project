@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/* modal */
+.modal {
+  background-color: #fff;
+  width: 470px;
+  height: 470px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 32px;
+  z-index: 0;
+}
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-container.showModal {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.checkout-container {
+  border-radius: 32px;
+  padding: 75px 30px 70px;
+  display: block;
+  margin: 0px auto;
+  background: rgb(255, 255, 255);
+  position: relative;
+  max-width: 470px;
+
+  top: -50px;
+  height: 580px;
+}
+.heading-modal {
+  text-align: center;
+}
+.heading-modal h3 {
+  color: rgb(33, 33, 33);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0px 0px 5px;
+}
+.heading-modal p {
+  color: rgb(157, 158, 159);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.input-field-modal {
+  margin: 0px 0px 110px;
+}
+.mobile-field-modal {
+  margin: 0px 0px 40px;
+}
+.mobile-field-details {
+  position: relative;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.submit-mobile-details {
+  background-image: linear-gradient(to bottom right, #89216b, #da4453);
+  box-shadow: 0 28px 18px -23px #da4453;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 15px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: 0px;
+  outline: none;
+  padding: 13px 15px;
+  margin: 0 25%;
+}
+
+.submit-mobile-details:active {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.mobile-field-details img {
+  width: 65%;
+  object-fit: contain;
+  margin: 0 19%;
+}

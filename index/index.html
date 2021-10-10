@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatacliq</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="whole-page">
+    
+      <header>
+        <div class="nav-bar">
+          <div class="nav-bar-logo"></div>
+          <div class="nav-bar-content">
+            <div class="nav-bar-upper-header">
+              <a href="#">
+                <div class="luxury-tab">Tata CLiQ Luxury</div>
+              </a>
+              <div class="login-tab">
+                <div class="sign-in-section">
+                  <div class="sign-in-dropdown">
+                    <div class="dropdown-container">
+                      <div class="dropdown-login-button">
+                        <div class="dropdown-login-content">
+                          <div class="dropdown-button-base">
+                            <span onclick="showCheckout()">Login/ Register</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu-container">
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content1"></div>
+                        My account
+                      </div>
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content2"></div>
+                        Order History
+                      </div>
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content3"></div>
+                        Saved List
+                      </div>
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content4"></div>
+                        Alerts & Coupon
+                      </div>
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content5"></div>
+                        Gift Card
+                      </div>
+                      <div class="dropdown-menu-options">
+                        <div class="dropdown-menu-options-content6"></div>
+                        CLiQ Cash
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sign-in" onmouseover="showDropdown()">
+                    Sign in / Sign Up
+                  </div>
+                </div>
+                <a href="#">
+                  <div class="track-orders">Track Orders</div>
+                </a>
+                <a href="#">
+                  <div class="track-orders">CLiQ Care</div>
+                </a>
+                <a href="#">
+                  <div class="track-orders">Gift Card</div>
+                </a>
+                <a href="#">
+                  <div class="track-orders">CLiQ Cash</div>
+                </a>
+              </div>
+            </div>
+            <div class="nav-bar-lower-header">
+              <div class="left-tab-holder">
+                <div class="category" onmouseover="showCategory()" onmouseleave="closeCategory()">
+                  <span>Categories</span>
+                  <div class="category-arrow"></div>
+                  <div class="category-hover-div">
+                    <div class="category-hover-div-left">
+                      <div class="category-hover-div-left-options">
+                        Men's Fashion
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Women's Fashion
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        TV & Appliances
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Mobile Phones
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Electronics
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Kid's Fashion
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Beauty
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                      <div class="category-hover-div-left-options">
+                        Home Furnishings
+                        <div
+                          class="category-hover-div-left-options-arrow"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="category-hover-div-right">
+                      <a href="#" class="sub-heading">Ethnic Wear</a>
+                      <a href="#">Kurtas & Kurtis</a>
+                      <a href="#">Suit Sets</a>
+                      <a href="#">Sarees & Lehenga sets</a>
+                      <a href="#">Bottoms</a>
+                      <a href="#">Dupattas</a>
+                      <a href="#">Blouses & Dress material</a>
+                      <a href="#">Inner & Nightwear</a>
+                      <a href="#">Bras</a>
+                      <a href="#">Panties</a>
+                      <a href="#">Camisole</a>
+                      <a href="#">Sleepwear & Robes</a>
+                      <a href="#">Shapewear</a>
+                      <a href="#">Fragrances</a>
+                      <a href="#">Active & Sportswear</a>
+                      <a href="#">Western Wear</a>
+                      <a href="#">T-shirts & polos</a>
+                      <a href="#">Dresses</a>
+                      <a href="#">Shirts</a>
+                      <a href="#">Pant & Trousers</a>
+                      <a href="#">Jeans</a>
+                      <a href="#">Leggings</a>
+                      <a href="#">Jumpsuits</a>
+                      <a href="#">Skirts</a>
+                      <a href="#">Jacket & Blazers</a>
+                      <a href="#">Shrugs</a>
+                      <a href="#">Sweatshirts</a>
+                      <a href="#">Sweaters</a>
+                      <a href="#">Curvy Fashion</a>
+                      <a href="#">View All Clothing</a>
+                      <a href="#">Footwear</a>
+                      <a href="#">Casual</a>
+                      <a href="#">Ethnic</a>
+                      <a href="#">Formal</a>
+                      <a href="#">Sneakers</a>
+                      <a href="#">Boots</a>
+                      <a href="#">Sports Shoes</a>
+                      <a href="#">Flip-Flops</a>
+                      <a href="#">Watches</a>
+                      <a href="#">Dressy Watches</a>
+                      <a href="#">Casual Watches</a>
+                      <a href="#">Smart Watches</a>
+                      <a href="#">Formal Watches</a>
+                      <a href="#">Sporty watches</a>
+                      <a href="#">Handbags & Wallets</a>
+                      <a href="#">Handbags</a>
+                      <a href="#">Tote Bags</a>
+                      <a href="#">Sling Bags</a>
+                      <a href="#">Laptop Bags</a>
+                      <a href="#">Backpacks</a>
+                      <a href="#">Wallets</a>
+                      <a href="#">Clutches</a>
+                      <a href="#">Leather Handbags</a>
+                      <a href="#">Jewellery</a>
+                      <a href="#">Gold Jewellery</a>
+                      <a href="#">Diamond Jewellery</a>
+                      <a href="#">Silver Jewellery</a>
+                      <a href="#">Fashion Jewellery</a>
+                      <a href="#">Eyewear</a>
+                      <a href="#">Frames</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="brand"
+                  onmouseover="showBrand()"
+                  onmouseleave="closeBrand()"
+                >
+                  Brands
+                  <div class="brand-arrow"></div>
+                  <div class="brand-hover-div">
+                    <div class="brand-hover-div-left">
+                      <div class="brand-hover-div-left-options">
+                        TV & Appliances
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Electronics
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Women's Wear
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Men's Wear
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Footwear
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Jewellery
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Watches & Accessories
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                      <div class="brand-hover-div-left-options">
+                        Kids
+                        <div class="brand-hover-div-left-options-arrow"></div>
+                      </div>
+                    </div>
+                    <div class="brand-hover-div-center">
+                      <div class="center-left">
+                        <a href="#">Popular Brands</a>
+                        <a href="#">LG</a>
+                        <a href="#">Samsung</a>
+                        <a href="#">Sony</a>
+                        <a href="#">Hitachi</a>
+                        <a href="#">Daikin</a>
+                        <a href="#">Carrier</a>
+                        <a href="#">Blue Star</a>
+                        <a href="#">Bosch</a>
+                        <a href="#">Xiaomi</a>
+                        <a href="#">Panasonic</a>
+                        <a href="#">Bajaj</a>
+                        <a href="#">Kent</a>
+                        <a href="#">Havells</a>
+                      </div>
+                      <div class="center-right">
+                        <a href="#">Featured brands</a>
+                        <a href="#">VU</a>
+                        <a href="#">Lloyd</a>
+                        <a href="#">TCL</a>
+                        <a href="#">Sanyo</a>
+                        <a href="#">Godrej</a>
+                        <a href="#">Prestige</a>
+                        <a href="#">Wonderchef</a>
+                        <a href="#">Tata Swach</a>
+                        <a href="#">Livpure</a>
+                        <a href="#">Luminous</a>
+                        <a href="#">KitchenAid</a>
+                        <a href="#">Syska</a>
+                        <a href="#">Symphony</a>
+                      </div>
+                    </div>
+                    <div class="brand-hover-div-right">
+                      <div class="brand-logo-details">
+                        <div class="brand-image-base">
+                          <img
+                            src="https://assets.tatacliq.com/medias/sys_master/images/13957513642014.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="brand-logo-details">
+                        <div class="brand-image-base">
+                          <img
+                            src="https://assets.tatacliq.com/medias/sys_master/images/27251275989022.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="brand-logo-details">
+                        <div class="brand-image-base">
+                          <img
+                            src="https://assets.tatacliq.com/medias/sys_master/images/26728706506782.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div class="brand-logo-details">
+                        <div class="brand-image-base">
+                          <img
+                            src="https://assets.tatacliq.com/medias/sys_master/images/13957513838622.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-tab-holder">
+                <div class="my-bag">
+                  <div id="red-circle"><div id="getTheTotalCount">0</div></div>
+                </div>
+                <div class="my-wishlist"></div>
+              </div>
+              <div class="search-tab-holder">
+                <div class="search-tab-container">
+                  <div class="search-tab-content">
+                    <div class="search-tab-logo" onclick="closesearch()">
+                      <div class="icon-base">
+                        <div class="icon-image"></div>
+                      </div>
+                    </div>
+                    <div class="search-bar">
+                      <div class="search-bar-input">
+                        <input
+                          type="search"
+                          placeholder="Search"
+                          id="search-field"
+                          onclick="searchbar()"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page-middle-section">
+      <div class="main-carousel">
+      <div id="carousel"></div>
+      <div id="carousel1"></div>
+      <div id="carousel2"></div>
+    
+      </div>
+      <div class="carousel-left-arrow" onclick="prev()"></div>
+      <div class="carousel-right-arrow" onclick="frd()"></div>
+      <div class="below-carousel">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/30507508269086.jpg" alt="">
+      </div>
+      <div class="new-on-cliq">
+        <img src="https://i.imgur.com/kUk1TJ0.png" alt="">
+      </div>
+      <div class="kartik-aryan-img">
+        <img src="https://assets.tatacliq.com/medias/sys_master/images/30514268995614.png" alt="">
+      </div>
+      <div class="carousel-product">
+        <div class="carousel-header">
+          <div class="carousel-nav">
+            <div class="carousel-left-btn" onclick="prevProduct()"></div>
+            <div class="carousel-right-btn" onclick="nextProduct()"></div>
+          </div>
+        </div>
+        <div class="carousel-content">
+          <div class="carousel-slider">
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30418147770398.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30525474078750.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514270306334.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514269782046.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514269847582.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514270568478.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30525472047134.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514270175262.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-heading">
+        <div class="upper-product-heading">
+          <div class="upper-product-heading-title">
+            <h1>ALL ABOUT FASHION</h1>
+          </div>
+        </div>
+        <div class="lower-product-heading">
+          <h2>Trending Styles for every wardrobe</h2>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="product-content-inner">
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30523785019422.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30523785150494.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30523785216030.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30523785281566.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="product-content" style="margin-top: 70px;">
+        <div class="product-content-inner">
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112228382.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112293918.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112359454.jpg" alt=""></div>
+          <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112424990.jpg" alt=""></div>
+        </div>
+      </div>
+            <div class="product-heading">
+              <div class="upper-product-heading">
+                <div class="upper-product-heading-title">
+                  <h1>ELECTRONICS UPGRADES</h1>
+                </div>
+              </div>
+              <div class="lower-product-heading">
+                <h2>All the tech you will ever need</h2>
+              </div>
+            </div>
+            <div class="product-content">
+              <div class="product-content-inner">
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112490526.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112556062.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112621598.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516112687134.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="product-content" style="margin-top: 70px;">
+              <div class="product-content-inner">
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113014814.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113080350.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113145886.jpg" alt=""></div>
+                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113211422.jpg" alt=""></div>
+              </div>
+            </div>
+              <div class="product-heading">
+                <div class="upper-product-heading">
+                  <div class="upper-product-heading-title">
+                    <h1>THE BEAUTY LAB</h1>
+                  </div>
+                </div>
+                <div class="lower-product-heading">
+                  <h2>Your go-tos for a fresh, new you</h2>
+                </div>
+              </div>
+              <div class="product-content">
+                <div class="product-content-inner">
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113408030.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113473566.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113539102.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113604638.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="product-content" style="margin-top: 70px;">
+                <div class="product-content-inner">
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113670174.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113866782.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516113735710.jpg" alt=""></div>
+                  <div class="product-img"><img src="	https://assets.tatacliq.com/medias/sys_master/images/30516113801246.jpg" alt=""></div>
+                </div>
+              </div>
+                    <div class="product-heading" style="margin-bottom: -140px;">
+                      <div class="upper-product-heading">
+                        <div class="upper-product-heading-title">
+                          <h1>APPLE DAYS</h1>
+                        </div>
+                      </div>
+                      <div class="lower-product-heading">
+                        <h2>The tech you need</h2>
+                      </div>
+                    </div>
+      <div class="carousel-product">
+        <div class="carousel-header">
+          <div class="carousel-nav">
+            <div class="carousel-left-btn" onclick="prevProduct1()"></div>
+            <div class="carousel-right-btn" onclick="nextProduct1()"></div>
+          </div>
+        </div>
+        <div class="carousel-content1">
+          <div class="carousel-slider1">
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094337054.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094533662.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094468126.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094402590.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094664734.jpg" alt=""></div>
+            <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516094599198.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+               <div class="product-heading" style="margin-bottom: -140px;">
+                <div class="upper-product-heading">
+                  <div class="upper-product-heading-title">
+                    <h1>MOBILE ZONE</h1>
+                  </div>
+                </div>
+                <div class="lower-product-heading">
+                  <h2>Connect with the most popular smartphones</h2>
+                </div>
+              </div>
+              <div class="carousel-product">
+                <div class="carousel-header">
+                  <div class="carousel-nav">
+                    <div class="carousel-left-btn" onclick="prevProduct2()"></div>
+                    <div class="carousel-right-btn" onclick="nextProduct2()"></div>
+                  </div>
+                </div>
+                <div class="carousel-content2">
+                  <div class="carousel-slider2">
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514272993310.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273058846.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273124382.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273189918.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273255454.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516067663902.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273320990.jpg" alt=""></div>
+                    <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514272993310.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+
+                             <div class="product-heading" style="margin-bottom: -140px;">
+                              <div class="upper-product-heading">
+                                <div class="upper-product-heading-title">
+                                  <h1>THE WESTSIDE STORE</h1>
+                                </div>
+                              </div>
+                              <div class="lower-product-heading">
+                                <h2>Discover the latest trends</h2>
+                              </div>
+                            </div>
+                            <div class="carousel-product">
+                              <div class="carousel-header">
+                                <div class="carousel-nav">
+                                  <div class="carousel-left-btn" onclick="prevProduct3()"></div>
+                                  <div class="carousel-right-btn" onclick="nextProduct3()"></div>
+                                </div>
+                              </div>
+                              <div class="carousel-content3">
+                                <div class="carousel-slider3">
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273452062.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273517598.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273583134.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273648670.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273714206.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273779742.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273845278.jpg" alt=""></div>
+                                  <div class="carousel-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514273910814.jpg" alt=""></div>
+                                </div>
+                              </div>
+                            </div>
+              <div class="product-heading">
+                <div class="upper-product-heading">
+                  <div class="upper-product-heading-title">
+                    <h1>SMART HOMES</h1>
+                  </div>
+                </div>
+                <div class="lower-product-heading">
+                  <h2>Future ready upgrades for your space</h2>
+                </div>
+              </div>
+              <div class="product-content">
+                <div class="product-content-inner">
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514274828318.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514274893854.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514274959390.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514275155998.jpg" alt=""></div>
+                </div>
+              </div>
+  
+                            <div class="product-content" style="margin-top: 70px;">
+                              <div class="product-content-inner">
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514275352606.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514275483678.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514275614750.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30514275680286.jpg" alt=""></div>
+                              </div>
+                            </div>
+              
+              <div class="product-heading">
+                <div class="upper-product-heading">
+                  <div class="upper-product-heading-title">
+                    <h1>SPORT SELEQT</h1>
+                  </div>
+                </div>
+                <div class="lower-product-heading">
+                  <h2>Keep your fitness game strong</h2>
+                </div>
+              </div>
+              <div class="product-content">
+                <div class="product-content-inner">
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082704414.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082769950.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082835486.jpg" alt=""></div>
+                  <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082901022.jpg" alt=""></div>
+                </div>
+              </div>
+  
+                            <div class="product-content" style="margin-top: 70px;">
+                              <div class="product-content-inner">
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082835486.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516082966558.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516083130398.jpg" alt=""></div>
+                                <div class="product-img"><img src="https://assets.tatacliq.com/medias/sys_master/images/30516091748382.jpg" alt=""></div>
+                              </div>
+                            </div>
+         
+      </div>
+
+      <footer>
+        <div class="footer-heading">
+          <div class="footer-heading-container">
+            <div class="footer-heading-content">
+              <div class="footer-heading-text">Tata Trust</div>
+            </div>
+            <div class="footer-heading-content">
+              <div class="footer-heading-text">QUiQ PiQ</div>
+            </div>
+            <div class="footer-heading-content">
+              <div class="footer-heading-text">Authentic brands</div>
+            </div>
+            <div class="footer-heading-content">
+              <div class="footer-heading-text">Easy returns</div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-middle">
+          <div class="footer-middle-left">
+            <div class="footer-middle-left-content">
+              <div class="footer-left-title">Tata MarketPlace</div>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Sell With Us</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Affiliates</a>
+              <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-middle-left-content">
+              <div class="footer-left-title">Customer Service</div>
+              <a href="#">Shopping</a>
+              <a href="#">Frequently Asked Questions</a>
+              <a href="#">Offers & Promotions</a>
+              <a href="#">Payments</a>
+              <a href="#">Cancellation</a>
+              <a href="#">Returns & Refunds</a>
+              <a href="#">CliQ And PiQ</a>
+              <a href="#">Return To Store</a>
+              <a href="#">Electronics Return Policy</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Reviews Guidelines</a>
+            </div>
+            <div class="footer-middle-left-content">
+              <div class="footer-left-title">My Tata CLiQ</div>
+              <a href="#">My Account</a>
+              <a href="#">My Orders</a>
+              <a href="#">My Shopping Bag</a>
+              <a href="#">My Wishlist</a>
+            </div>
+          </div>
+          <div class="footer-middle-right">
+            <div class="footer-middle-right-content">
+              <h5>Tata CLiQ Offerings</h5>
+              <a href="#">Electronics</a>
+              <span>|</span>
+              <a href="#">Men's Footwear</a>
+              <span>|</span>
+              <a href="#">Women's Footwear</a>
+              <span>|</span>
+              <a href="#">Men's Apparel</a>
+              <span>|</span>
+              <a href="#">Women's Apparel</a>
+              <span>|</span>
+              <a href="#">Gold Jewellery</a>
+              <span>|</span>
+              <a href="#">Silver Jewellery</a>
+              <span>|</span>
+              <a href="#">Diamond Jewellery</a>
+              <span>|</span>
+              <a href="#">Beauty Products</a>
+              <span>|</span>
+              <a href="#">Watches</a>
+              <span>|</span>
+              <a href="#">Men's Fashion Accessories</a>
+              <span>|</span>
+              <a href="#">Fashion Jewellery</a>
+              <span>|</span>
+              <a href="#">Men's Clothing</a>
+              <span>|</span>
+              <a href="#">Home Appliances</a>
+              <span>|</span>
+              <a href="#">Headphones</a>
+              <span>|</span>
+              <a href="#">Laptops Store</a>
+              <span>|</span>
+              <a href="#">Keyboards & Mouses</a>
+              <span>|</span>
+              <a href="#">Women's Fashion</a>
+              <span>|</span>
+              <a href="#">Small Home Appliances</a>
+              <span>|</span>
+              <a href="#">Gold Coins</a>
+              <span>|</span>
+              <a href="#">Televisions</a>
+              <span>|</span>
+              <a href="#">Cameras & Accessories</a>
+              <span>|</span>
+              <a href="#">Kitchen Appliances</a>
+              <span>|</span>
+              <a href="#">Men's Grooming</a>
+              <span>|</span>
+              <a href="#">Mobile Phones</a>
+              <span>|</span>
+              <a href="#">Men's Casual Shoes</a>
+              <span>|</span>
+              <a href="#">Men's Sports Shoes</a>
+              <span>|</span>
+              <a href="#">Air Conditioners</a>
+              <span>|</span>
+              <a href="#">Women's ethnic wear</a>
+              <span>|</span>
+              <a href="#">Women's Western Wear</a>
+              <span>|</span>
+              <a href="#">Refrigerators</a>
+              <span>|</span>
+              <a href="#">Men's Bags & Backpacks</a>
+              <span>|</span>
+              <a href="#">Handbags & Wallets</a>
+              <span>|</span>
+              <a href="#">Apple iPhone 11</a>
+              <span>|</span>
+              <a href="#">Xiaomi Redmi 9a</a>
+              <span>|</span>
+              <a href="#">Banglore Refinery 24K Gold Bar</a>
+              <span>|</span>
+              <a href="#">Malabar Gold & Diamond Coin</a>
+              <span>|</span>
+              <a href="#">Xiaomi Redmi 9</a>
+              <span>|</span>
+              <a href="#">Vivo Y20</a>
+              <span>|</span>
+              <a href="#">I Kall 6700</a>
+              <span>|</span>
+              <a href="#">Oppo A 33</a>
+              <span>|</span>
+              <a href="#">Kent room ozone air disfectant</a>
+              <span>|</span>
+              <a href="#">Joyalukkas Gold Earrings</a>
+              <span>|</span>
+              <a href="#">Vivo Y51A</a>
+              <span>|</span>
+              <a href="#">Voltas 1.5 ton adjustable inverter AC</a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom-heading">
+          <div class="footer-bottom-heading-container">
+            <div class="footer-heading-bottom-content-left">
+              <div class="footer-heading-bottom-title">Download App</div>
+              <a href="https://play.google.com/store/apps/details?id=com.tul.tatacliq">
+              <div class="bottom-logo">
+                <div class="bottom-logo-container">
+                  <div class="bottom-logo-content"></div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="footer-heading-bottom-content-middle">
+             <a href="https://www.facebook.com/TataCLiQ/"><img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" alt=""></a>
+
+             <a href="https://twitter.com/tatacliq"><img src="https://image.flaticon.com/icons/png/512/60/60580.png" alt=""></a>
+
+             <a href="https://www.instagram.com/tatacliq/"><img src="https://image.similarpng.com/very-thumbnail/2020/07/Instagram-black-and-white-logo-vector-png-(5).png" alt=""></a>
+
+             <a href="https://www.youtube.com/channel/UCUwkaWqIcl9dYQccKkM0VRA"><img src="https://i.pinimg.com/originals/20/9b/d8/209bd859c265e7ffc4bfeb75877b23f7.png" alt=""></a>
+
+             <a href="https://in.linkedin.com/company/tatacliq"><img src="https://image.flaticon.com/icons/png/512/61/61109.png" alt=""></a>
+
+            </div>
+            <div class="footer-heading-bottom-content-right">©  2021  Tata CLiQ | All rights reserved</div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <h3>TATA CLiQ: Shop Online with India's most trusted destination. Buy Brands you love at prices you want!</h3>
+            <p>Shop online whenever you want to - yes, that 24x7 experience is so convenient now, isn't it?! Get genuine products from all the Top Brands delivered to your doorstep, with free shipping. Our clean, immersive design allows for easy navigation across categories and brand stores so you can find the best products from a wide range of  section and get the best prices on various products across lifestyle, fashion, electronics, appliances & more. With such offerings and TATA CLiQ exclusive bank offers and TATA CLiQ coupons, do remeber to buy mobile online, do online electronics shopping and online dress shopping of top Brands at the best prices available throughout the year.</p>
+            <h3>Online Shopping: Fast & convenient with the click of a button</h3>
+            <p>The upside of online shopping at TATA CLiQ online store, is that you'll save on time and most importantly money with TataCliq offers. It's as simple as comparing products and prices online before making the right buy. What's more, you also have the option to pay for your favourite brands and products using our easy EMI options. Of course, you can buy and try - in the convenience of your home. Returns are easy too: We'll pick up your returns for free or you can also drop off the goods at the nearest brand store.</p>
+            <h3>Tata CLiQ Shopping App: Everything you want with just a few clicks on Android & iOS</h3>
+            <p>Shopping on the Tata CLiQ App is an absolute delight. Download the  from Apple App Store and get set to enjoy a range of benefits. Apart from the best deals, amazing offers and the latest styles online, the app also gives you the flexibility to shop at your convenience. Shop during a commute, in the middle of a holiday or at any time you want to. You can also use the easy share options to share your shopping with your friends and family to ensure you're buying something that's perfect. With constant updates and a host of new features being introduced constantly, you also get to enjoy a shopping experience that you'll absolutely love. Download the Tata CLiQ App today and prepare to rediscover the way you shop. </p>
+            <h3>TATA CLiQ: Most genuine place for Electronics and Lifestyle Online Shopping, with India's most trusted destination. Buy Brands you love at prices you want!</h3>
+            <p>Shopping for your Lifestyle needs will be made delightfult with TATA CLiQ. With exclusive Brand store for  we have most of your trndy shopping needs taken care of. Make TATA CliQ your online clothes shopping destination and get the best deals on your favorite brands, with the 100% genuine products. Be it gold coins or mobile phones online, you can count on TATA CliQ for receiving only the most authentic products. Upgrade your lifestyle with shoes online shopping and online clothes shopping only at TATA CLiQ. Online Shopping for men has never been more easy! Men like to choose Brands and keep their wardrobe upto date with the latest trends. TATA CLiQ has made the Online shopping expirience amazing for Men. Women's Lifetyle Online shopping needs have been taken care of as well, with the larget assortment of womenwear online </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+            <i class="fa fa-times" onclick="closeModal()"></i>
+            <div class="checkout-container">
+                <div class="heading-modal">
+                    <h2>Welcome to Tata CLiQ</h2>
+                    <p id="input-type">Please enter your mobile number</p>
+                </div>
+                <div class="input-field-modal">
+                    <div class="mobile-field-modal">
+                        <div class="mobile-field-details">
+                            <div class="mobile-code">+91</div>
+                            <input type="text" placeholder="Enter your details" id="input-mobile">
+                            <div class="below-input" onclick="useEmail()">use Email address</div>
+                        </div>
+                        <button class="submit-mobile-details" id="submit" onclick="showCheckout2()">Continue</button>
+                    </div>
+                </div>
+            </div>
+    </div>  
+
+       <div class="modal-container2">
+        <div class="modal">
+            <i class="fa fa-times" onclick="closeModal()"></i>
+            <div class="checkout-container">
+                <div class="heading-modal">
+                    <h2>Tata CLiQ</h2>
+                    <p>Please enter your password</p>
+                </div>
+                <div class="input-field-modal">
+                    <div class="mobile-field-modal">
+                        <div class="mobile-field-details">
+                            <input type="password" placeholder="Enter Password" id="input-mobile">
+                        </div>
+                        <button class="submit-mobile-details" id="submit" onclick="submitMobile()">Continue</button>
+                    </div>
+                </div>
+            </div>
+    </div>  
+
+  
+  </body>
+</html>
+<script src="index.js"></script>

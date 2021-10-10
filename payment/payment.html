@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="payment.css">
+
+<body>
+  <!-- Navigation html starts -->
+  <header>
+    <div class="nav-bar">
+      <div class="nav-bar-logo"></div>
+      <div class="nav-bar-upper-header">
+        <div class="login-tab">
+          <div class="sign-in-section">
+            <div class="sign-in-dropdown">
+              <div class="dropdown-container"></div>
+              <div class="dropdown-menu-container">
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content1"></div>
+                  My account
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content2"></div>
+                  Order History
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content3"></div>
+                  Saved List
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content4"></div>
+                  Alerts & Coupon
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content5"></div>
+                  Gift Card
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content6"></div>
+                  CLiQ Cash
+                </div>
+                <div class="dropdown-menu-options">
+                  <div class="dropdown-menu-options-content7"></div>
+                  Log Out
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="track-orders0"></div>
+            </a>
+            <div class="sign-in" onmouseover="showDropdown()">
+              1234567890
+            </div>
+          </div>
+          <a href="#">
+            <div class="track-orders1"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation bar html ends -->
+
+  <div id="header">Checkout</div> 
+  <div id="parent">
+    <div id="container1">
+
+      <div class="block1">
+        <div class="delivery">Delivery Address</div>
+        <a class="change" href="/address/address.html">Change</a>
+        <div id="deliverydisplay">
+          <div id="addresstype"></div>
+          <div id="address"></div>
+        </div>
+      </div>
+
+      <div class="block2">
+        <div class="delivery">Delivery Mode</div>
+        <div class="change">Change</div>
+        <div id="deliverymode">
+          <div class="deliveryname">Being Human Maroon Printed Cotton T-Shirt:</div>
+          <div class="deliverydate">Delivery by 30th July</div>
+        </div>
+      </div>
+
+      <div class="block3" style= "height: 220px;" id="xxxheight">
+        <div class="method">Payment Method</div>
+        <form id="creditdetails" onsubmit="pay(event)">
+          <button type="button" class="collapsible" onclick="xxxheightChange()">Credit
+            Card</button> 
+
+          <div class="content">
+            <input class="cardnumber" required id="cardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number" maxlength="19" placeholder="Card Number*" aria-required="true" />
+            <select class="month" required id="month" aria-required="true">
+              <option value="" disabled selected>Expiry Month</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <select class="year" required id="year" aria-required="true">
+              <option value="" disabled selected>Expiry Year</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+            </select>
+            <input type="text" class="name" required id="name" placeholder="Name on the Card*" aria-required="true" />
+            <input class="CVV" required id="CVV" inputmode="numeric" type="number" pattern="[0-9]"
+              autocomplete="cc-number" maxlength="3" placeholder="CVV*" aria-required="true" />
+            <button class="payment">Pay now</button>
+        </form>
+      </div>
+
+      <form id="debitdetails" onsubmit="pay1(event)">
+        <button type="button" class="collapsible" onclick="xxxheightChangeDebit()">Debit
+          Card</button>
+        <div class="content">
+          <input class="cardnumber1" required id="cardnumber1" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+            autocomplete="cc-number" maxlength="19" placeholder="Card Number*" aria-required="true" />
+          <select class="month1" required id="month1" aria-required="true" placeholder="Expiry Month">
+            <option value="" disabled selected>Expiry Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <select class="year1" required id="year1" aria-required="true" placeholder="Expiry year">
+            <option value="" disabled selected>Expiry Year</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+            <option>2030</option>
+          </select>
+          <input type="text" class="name1" required id="name1" placeholder="Name on the Card*" aria-required="true"
+             />
+          
+          <input class="CVV1" required id="CVV1" inputmode="numeric" type="number" pattern="[0-9]"
+            autocomplete="cc-number" maxlength="3" placeholder="CVV*" aria-required="true" />
+          <button class="payment">Pay now</button>
+        </div>
+      </form>
+      <button type="button" class="collapsible2">Cash on Delivery (Not available)</button>
+      <div id="notavailable">
+      </div>
+
+    </div>
+  </div>
+
+  <div id="container2">
+    <div id="total">
+      <div class="bagtotal">Bag total</div>
+      <div class="bagtotalvalue">₹799.00</div>
+      <div class="charge">Shipping Charge</div>
+      <div class="free">₹49.00</div>
+      <div class="subtotal">Bag Subtotal</div>
+      <div class="subtotalvalue">₹848.00</div>
+      <div class="discount">Product Discount(s)</div>
+      <div class="discountvalue">-₹240.00</div>
+    </div>
+    <div id="discountmsg">You will save ₹240.00 on this order</div>
+    <div id="totalpay">
+      <div class="toalpayable">Total Payable</div>
+      <div class="totalprice">₹608.00</div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <div class="safe">
+    Safe and secure payments. Easy returns. 100% <br>Authentic products.</div>
+
+  <div class="whatsapp" >
+    <input type="checkbox" class="whatsappcheck" />
+    <label for="whatsappcheck">Get order update on WhatsApp.</label>
+  </div>
+  <div id="success-icon" class="tick-mark-animation">
+    <span id="receipt-icon" class="material-icons">task_alt</span>
+  </div>
+</body>
+
+</html>
+
+<script src="payment.js"></script>

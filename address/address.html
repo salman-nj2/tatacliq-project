@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="address.css">
+
+<body>
+  <!-- Navigation html starts -->
+<header>
+  <div class="nav-bar">
+    <div class="nav-bar-logo"></div>
+    <div class="nav-bar-upper-header">
+      <div class="login-tab">
+        <div class="sign-in-section">
+          <div class="sign-in-dropdown">
+            <div class="dropdown-container"></div>
+            <div class="dropdown-menu-container">
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content1"></div>
+                My account
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content2"></div>
+                Order History
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content3"></div>
+                Saved List
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content4"></div>
+                Alerts & Coupon
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content5"></div>
+                Gift Card
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content6"></div>
+                CLiQ Cash
+              </div>
+              <div class="dropdown-menu-options">
+                <div class="dropdown-menu-options-content7"></div>
+                Log Out
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <div class="track-orders0"></div>
+          </a>
+          <div class="sign-in" onmouseover="showDropdown()">
+            1234567890
+          </div>
+        </div>
+        <a href="#">
+          <div class="track-orders1"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Navigation bar html ends -->
+  <div id="header">Checkout</div>
+  <div id="Parent">
+    <div id="container1">
+      <form id="signupforuser" onsubmit="addAddress(event)">
+        <div class="block1">
+          <div class="heading">Add Address</div>
+          <input type="number" class="pincode" required id="pincode" placeholder="Enter your PIN code*"
+            aria-required="true" />
+          <input type="text" class="city" required id="city" placeholder="City/District*" aria-required="true" />
+          <input type="text" class="state" required id="state" placeholder="State*" aria-required="true"/>
+          <select id="landmark">
+            <option value="" disabled selected>Landmark</option>
+            <option value="1">India</option>
+            <option value="2">Other Countries</option>
+          </select>
+          <div class="radio">
+            <input type="radio" class="home" required id="home" name="addresstype"
+              aria-required="true" /><span>Home</span>
+            <input type="radio" class="office" required id="office" name="addresstype"
+              aria-required="true" /><span>Office</span>
+          </div>
+        </div>
+
+        <div class="block2">
+          <button class="clear" onclick="clear1()"><span>Clear All</span></button>
+          <div class="first">
+            <input type="text" class="firstname" required id="firstname" placeholder="First Name*"
+              aria-required="true" />
+            <input type="text" class="lastname" required id="lastname" placeholder="Last Name*" aria-required="true" />
+          </div>
+          <div class="address">
+            <textarea name="Address*" maxlength="70" required id="address" cols="41" rows="4" aria-required="true"></textarea>
+            Character limit:70<br>Special Characters allowed are - # & ( ) ' ' . , \ / + _
+          </div>
+
+              <input class="phonenumber" required id="phonenumber" type="text" pattern="\d*"  placeholder="Phone Number*" aria-required="true" maxlength="10" />
+        </div>
+
+        <div class="block3">
+          <div class="defaultaddress">
+            <input type="radio" id="defaultaddress" /><span>Make this Default Address</span>
+          </div>
+          <div class="continue">
+
+            <button class="cancel" onclick="xxxMOVEBACK()">Cancel</button>
+            <button class="save">Save and continue</button>
+          </div>
+        </div>
+      </form>
+       <!-- <button class="save" onclick="addAddress()">Save and continue</button> -->
+    </div>
+
+    <div id="container2">
+      <div id="total">
+        <div class="bagtotal">Bag total</div>
+        <div class="bagtotalvalue">₹799.00</div>
+        <div class="charge">Shipping Charge</div>
+        <div class="free">₹69.00</div>
+        <div class="subtotal">Bag Subtotal</div>
+        <div class="subtotalvalue">₹868.00</div>
+        <div class="discount">Product Discount(s)</div>
+        <div class="discountvalue">-₹240.00</div>
+      </div>
+      <div id="discountmsg">You will save ₹240.00 on this order</div>
+      <div id="totalpay">
+        <div class="toalpayable">Total Payable</div>
+        <div class="totalprice">₹628.00</div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script src="address.js"></script>

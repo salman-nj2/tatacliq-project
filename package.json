@@ -1,0 +1,19 @@
+{
+  "name": "updatedSprint-master",
+  "version": "1.0.0",
+  "description": "As a part of our build week we were given a problem statement to clone the website Tata Cliq. We have tried to make a pixel-perfect clone of the original website in 6 days.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "y": "^0.3.2"
+  }
+}
